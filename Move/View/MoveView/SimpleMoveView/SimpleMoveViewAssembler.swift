@@ -8,7 +8,6 @@ protocol SimpleMoveViewAssembler: MoveViewAssembler {
 
 extension SimpleMoveViewAssembler where Self: Assembler {
     func resolve() -> MoveViewFactory {
-        SimpleMoveViewFactory(settings: resolve(),
-                              actions: resolve())
+        SimpleMoveViewFactory(settings: resolve(),                              actions: resolve())
     }
 }

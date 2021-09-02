@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		44A4D0A3071CB2AD5FC589B7 /* MoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D69597F1913A89339BD9 /* MoveTests.swift */; };
+		44A4D177A8432A257018EF93 /* SimpleSettingsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D6CB06E8F215B2A5584D /* SimpleSettingsViewFactory.swift */; };
+		44A4D18641638ED4D4352E47 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D76493F8E6DE36E68A99 /* SettingsView.swift */; };
 		44A4D1DDFD465A8B62AFA272 /* MoveViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D18D1692E829E976FB0F /* MoveViewAssembler.swift */; };
 		44A4D205A01E779B73ACD1A7 /* WindowAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D2EB11AB20A0239F2A89 /* WindowAssembler.swift */; };
 		44A4D24896FCC26D525F1FB7 /* MoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D7486C13D8E48CB29F54 /* MoveView.swift */; };
 		44A4D2D846744E4BACE18BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DF5541D24CA1182EBFA0 /* AppDelegate.swift */; };
+		44A4D2F76C6D209B51CAD2C1 /* SimpleSettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D030FE5A175B62C1FFF3 /* SimpleSettingsContentView.swift */; };
+		44A4D39F7FB62F54BCF868AF /* SimpleSettingsViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DFFCE73829D356CD7C3E /* SimpleSettingsViewAssembler.swift */; };
 		44A4D4C402E1A0F0BE000597 /* SimpleMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DC30C741FECCC9502595 /* SimpleMoveView.swift */; };
 		44A4D66DDD9C360EED83D9F0 /* WindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D17948E969483548E8E8 /* WindowFactory.swift */; };
+		44A4D6E8A48481E340392CBA /* SettingsViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DB4466CCC52892AB8A78 /* SettingsViewAssembler.swift */; };
 		44A4D778C10D24792610C27B /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DEFD395D12951F7B6C34 /* CancelBag.swift */; };
 		44A4D8085463BD9CD88D699E /* SettingsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D4E5012ADECAED66D762 /* SettingsAssembler.swift */; };
 		44A4D8B811AAC42506CCBD9D /* MoveViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D0E575DEAA9C3AC153B2 /* MoveViewFactory.swift */; };
@@ -22,6 +27,8 @@
 		44A4D9A414B5561884D1A8D5 /* OSConsoleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D81AE399D9BC89E374C6 /* OSConsoleLog.swift */; };
 		44A4D9C135E005519ED27E98 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DC3517C01E23A46E181A /* Window.swift */; };
 		44A4D9DBFBB8EC7168212B7A /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4DBA820C23526EA608D1D /* App.swift */; };
+		44A4DA362C168672E764D7D0 /* SimpleSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D86CBC0C9930B54EFB79 /* SimpleSettingsView.swift */; };
+		44A4DB388442568EB585AF23 /* SettingsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D418149024A1391088A7 /* SettingsViewFactory.swift */; };
 		44A4DB65D3553CC35D5D519D /* MoveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D3CC134C0A96E1D994BE /* MoveUITests.swift */; };
 		44A4DBC107586EF6AC836683 /* SimpleMoveViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4D436EA680F774AACD65B /* SimpleMoveViewAssembler.swift */; };
 		44A4DBF2AD31F918C2A63148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A4DE140AD47CBC1C345C6C /* Main.storyboard */; };
@@ -55,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44A4D030FE5A175B62C1FFF3 /* SimpleSettingsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSettingsContentView.swift; sourceTree = "<group>"; };
 		44A4D0E575DEAA9C3AC153B2 /* MoveViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveViewFactory.swift; sourceTree = "<group>"; };
 		44A4D17948E969483548E8E8 /* WindowFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowFactory.swift; sourceTree = "<group>"; };
 		44A4D18D1692E829E976FB0F /* MoveViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveViewAssembler.swift; sourceTree = "<group>"; };
@@ -67,6 +75,7 @@
 		44A4D31D0380BB94C418B682 /* SimpleMoveContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMoveContentView.swift; sourceTree = "<group>"; };
 		44A4D3B31EF7739047D52F22 /* MoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A4D3CC134C0A96E1D994BE /* MoveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveUITests.swift; sourceTree = "<group>"; };
+		44A4D418149024A1391088A7 /* SettingsViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewFactory.swift; sourceTree = "<group>"; };
 		44A4D436EA680F774AACD65B /* SimpleMoveViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMoveViewAssembler.swift; sourceTree = "<group>"; };
 		44A4D49016EA020B6BC7D5CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44A4D4E5012ADECAED66D762 /* SettingsAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAssembler.swift; sourceTree = "<group>"; };
@@ -76,11 +85,15 @@
 		44A4D5F5DE317FB878AF49D0 /* MoveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A4D60928B9896C5683B949 /* NSWindowPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSWindowPanel.swift; sourceTree = "<group>"; };
 		44A4D69597F1913A89339BD9 /* MoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveTests.swift; sourceTree = "<group>"; };
+		44A4D6CB06E8F215B2A5584D /* SimpleSettingsViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSettingsViewFactory.swift; sourceTree = "<group>"; };
 		44A4D7486C13D8E48CB29F54 /* MoveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveView.swift; sourceTree = "<group>"; };
+		44A4D76493F8E6DE36E68A99 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		44A4D81AE399D9BC89E374C6 /* OSConsoleLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSConsoleLog.swift; sourceTree = "<group>"; };
+		44A4D86CBC0C9930B54EFB79 /* SimpleSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSettingsView.swift; sourceTree = "<group>"; };
 		44A4D8D18B600CB99BA853A4 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		44A4DAC795C6E1D6B092AAF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A4DB343EE019CB3C23105C /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
+		44A4DB4466CCC52892AB8A78 /* SettingsViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewAssembler.swift; sourceTree = "<group>"; };
 		44A4DBA820C23526EA608D1D /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		44A4DBDB7CD194DE97659DE2 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		44A4DC30C741FECCC9502595 /* SimpleMoveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMoveView.swift; sourceTree = "<group>"; };
@@ -90,6 +103,7 @@
 		44A4DEDB2BD83F70D6D1B14F /* Move.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Move.entitlements; sourceTree = "<group>"; };
 		44A4DEFD395D12951F7B6C34 /* CancelBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		44A4DF5541D24CA1182EBFA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44A4DFFCE73829D356CD7C3E /* SimpleSettingsViewAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSettingsViewAssembler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +222,7 @@
 			children = (
 				44A4DF27C80CA787A220DC7E /* Window */,
 				44A4D8D1029C6FD2DBACBAB4 /* MoveView */,
+				44A4DECB2000048381C6B684 /* SettingsView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +242,17 @@
 				44A4D3CC134C0A96E1D994BE /* MoveUITests.swift */,
 			);
 			path = MoveUITests;
+			sourceTree = "<group>";
+		};
+		44A4DB7765528433AD4D4483 /* SimpleSettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				44A4D030FE5A175B62C1FFF3 /* SimpleSettingsContentView.swift */,
+				44A4DFFCE73829D356CD7C3E /* SimpleSettingsViewAssembler.swift */,
+				44A4D6CB06E8F215B2A5584D /* SimpleSettingsViewFactory.swift */,
+				44A4D86CBC0C9930B54EFB79 /* SimpleSettingsView.swift */,
+			);
+			path = SimpleSettingsView;
 			sourceTree = "<group>";
 		};
 		44A4DD3D4F454402BF6B7861 /* Actions */ = {
@@ -263,6 +289,17 @@
 				44A4D81AE399D9BC89E374C6 /* OSConsoleLog.swift */,
 			);
 			path = Console;
+			sourceTree = "<group>";
+		};
+		44A4DECB2000048381C6B684 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				44A4DB7765528433AD4D4483 /* SimpleSettingsView */,
+				44A4D76493F8E6DE36E68A99 /* SettingsView.swift */,
+				44A4D418149024A1391088A7 /* SettingsViewFactory.swift */,
+				44A4DB4466CCC52892AB8A78 /* SettingsViewAssembler.swift */,
+			);
+			path = SettingsView;
 			sourceTree = "<group>";
 		};
 		44A4DECDACA0127F09A3249A /* Settings */ = {
@@ -363,12 +400,17 @@
 /* Begin PBXProject section */
 		44A4DE78AD0BA80077E26835 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Nomad5;
+			};
 			buildConfigurationList = 44A4D38B3869D778C5569AF7 /* Build configuration list for PBXProject "Move" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 44A4D53EA66DEFDC44168EA1;
 			productRefGroup = 44A4D742DCA537FEE96109D7 /* Products */;
@@ -445,6 +487,13 @@
 				44A4D8085463BD9CD88D699E /* SettingsAssembler.swift in Sources */,
 				44A4DCCDB53064E2104797B2 /* Actions.swift in Sources */,
 				44A4DD8349F9DD0A548530D3 /* ActionsAssembler.swift in Sources */,
+				44A4D18641638ED4D4352E47 /* SettingsView.swift in Sources */,
+				44A4DB388442568EB585AF23 /* SettingsViewFactory.swift in Sources */,
+				44A4D6E8A48481E340392CBA /* SettingsViewAssembler.swift in Sources */,
+				44A4D2F76C6D209B51CAD2C1 /* SimpleSettingsContentView.swift in Sources */,
+				44A4D39F7FB62F54BCF868AF /* SimpleSettingsViewAssembler.swift in Sources */,
+				44A4D177A8432A257018EF93 /* SimpleSettingsViewFactory.swift in Sources */,
+				44A4DA362C168672E764D7D0 /* SimpleSettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,8 +626,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -698,6 +746,7 @@
 				44A4DAB431F6564B6FBE2680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44A4D1D3D454DBB048F18F4D /* Build configuration list for PBXNativeTarget "MoveTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +755,7 @@
 				44A4D3F43F1A87430BB58796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44A4D38B3869D778C5569AF7 /* Build configuration list for PBXProject "Move" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +773,7 @@
 				44A4D0866502E3EA5BAD4AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

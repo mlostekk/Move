@@ -10,19 +10,27 @@ struct SimpleMoveContentView: View {
 
     var body: some View {
         Group {
-            // start / stop button
             Group {
+                Image("MovingBody")
                 Button(action: {
                     actions.openMoveViewSubject.send(())
                 }) {
-                    Text("Stop")
+                    Text("OK")
                             .font(.system(size: 25))
                             .padding()
                             .background(RoundedRectangle(cornerRadius: 8).foregroundColor(.blue))
                             .frame(width: 100)
                 }.buttonStyle(PlainButtonStyle())
-                Divider()
             }
-        }.padding()
+            .padding()
+        }
+        .background(Color.gray)
+        .cornerRadius(20)
+    }
+}
+
+struct SimpleMoveContentViewPreview: PreviewProvider {
+    static var previews: some View {
+        SimpleMoveContentView()
     }
 }

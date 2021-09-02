@@ -5,31 +5,29 @@ import Cocoa
 import SwiftUI
 import Combine
 
-/// The main application model
-@objc class App: NSObject {
+/// The main application
+class App: NSObject {
 
     /// Dependencies
-    private let assembler:         Assembler
-    private let windowFactory:     WindowFactory
-    private let actions:           Actions
+    private let assembler:    Assembler
+    private let actions:      Actions
 
     /// The cancel bag
-    private var globalCancelBag                             = CancelBag()
-    private var windowCancelBag                             = CancelBag()
+    private var globalCancelBag = CancelBag()
+    private var windowCancelBag = CancelBag()
 
-
-    var popover: NSPopover!
-    var statusBarItem: NSStatusItem!
-
-    /// The main window
-    private let mainWindow: Window
+    /// The windows
+    private let mainWindow:   Window
+    private let settingsView: SettingsView
 
     /// Construction with dependencies
     init(with assembler: Assembler) {
         self.assembler = assembler
-        windowFactory = assembler.resolve()
+        let windowFactory: WindowFactory = assembler.resolve()
         actions = assembler.resolve()
         mainWindow = windowFactory.createWindow()
+        let settingsFactory: SettingsViewFactory = assembler.resolve()
+        settingsView = settingsFactory.create()
     }
 
     /// Main entry point
@@ -45,35 +43,6 @@ import Combine
 
         //actions.openMoveViewSubject.send(())
 
-        let a = SimpleMoveContentView()
-
-
-        // Create the popover
-        popover = NSPopover()
-        popover.contentSize = NSSize(width: 400, height: 500)
-        popover.behavior = .transient
-        popover.contentViewController = NSHostingController(rootView: a)
-
-        // Create the status item
-        self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
-
-        if let button = self.statusBarItem.button {
-            button.title = "TEST"
-            button.action = #selector(self.togglePopover(_:))
-            button.target = self //critical line
-        }
-    }
-
-    @objc
-    func togglePopover(_ sender: AnyObject?) {
-        Log.e("whats up here")
-        if let button = self.statusBarItem.button {
-            if self.popover.isShown {
-                self.popover.performClose(sender)
-            } else {
-                self.popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
-            }
-        }
     }
 
     /// Show settings

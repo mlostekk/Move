@@ -6,6 +6,7 @@ import Foundation
 /// the DI to be configured
 protocol Assembler: NSWindowPanelAssembler,
                     SimpleMoveViewAssembler,
+                    SimpleSettingsViewAssembler,
                     ActionsAssembler,
                     SettingsAssembler {
 

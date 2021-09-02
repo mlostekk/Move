@@ -1,8 +1,9 @@
 // Copyright (c) 2021 Nomad5. All rights reserved.
 
 import Foundation
+import SwiftUI
 
-class SimpleMoveViewFactory: MoveViewFactory {
+class SimpleSettingsViewFactory: SettingsViewFactory {
 
     /// Injections
     private let settings: Settings
@@ -14,7 +15,8 @@ class SimpleMoveViewFactory: MoveViewFactory {
         self.actions = actions
     }
 
-    func createMoveView() -> MoveView {
-        SimpleMoveView(actions: actions, settings: settings)
+    /// Create the settings view
+    func create() -> SettingsView {
+        SimpleSettingsView(actions: actions, settings: settings)
     }
 }
